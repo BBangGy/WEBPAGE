@@ -1,0 +1,96 @@
+#header > .layout-content {
+    padding: 1.375rem;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#header > .layout-content > .cs {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#header > .layout-content > .cs > .item:not(:first-of-type)::before {
+    width: 0.0625rem;
+    height: 0.75rem;
+    background-color: #bdbdbd;
+    content: '';
+    display: inline-block;
+    margin: 0 0.625rem;
+}
+
+#header > .layout-content > .cs > .item > .link {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+#header > .layout-content > .menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2.375rem;
+    justify-content: flex-start;
+}
+#header > .layout-content > .menu > .item > .stretch {
+    flex-grow: 1;
+}
+#header > .layout-content > .menu > .item > .logo {
+    margin-right: 2.25rem;
+}
+
+#header > .layout-content > .menu > .item > .link {
+    color: inherit;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#header > .layout-content > .menu > .item > .search-form {
+    position: relative;
+    margin-right: -1rem;
+}
+
+#header > .layout-content > .menu > .item > .search-form > .button {
+    right: 0.5rem;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+#header > .layout-content > .menu > .item > .search-form > .button > .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#header > .layout-content > .menu > .item > .search-form > .label > .input {
+    width: 13.375rem;
+    height: 2.75rem;
+    border: 0.0625rem solid #000000;
+    border-radius: 999rem;
+    box-sizing: border-box;
+    font-size: 1.0625rem;
+    padding: 0 1.25rem;
+}
+
+#header > .layout-content > .menu > .item > .search-form > .label > .input:focus {
+
+    border-color: #016edf;
+    box-shadow: 0 0 0.375rem 0.0625rem #016edf50;
+    outline: 0.125rem solid #016edf;
+}
+#header > .layout-content > .menu > .item>.label{
+    cursor: pointer;
+}
+#header > .layout-content > .menu > .item>.label>.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#header > .layout-content > .menu > .item>.label>.checkbox{
+    display: none;
+}

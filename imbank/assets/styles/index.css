@@ -1,0 +1,15 @@
+@import "index.header.css";
+@import "index.main.css";
+@import "index.footer.css";
+
+body>.layout-wrapper{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+body>.layout-wrapper>.layout-content{
+    width: 73.125rem;
+}
