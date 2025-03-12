@@ -1,0 +1,21 @@
+@import "index.header.css";
+@import "index.main.css";
+@import "index.footer.css";
+
+body{
+    background-color: #121212;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+body>.layout-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+body>.layout-wrapper>.layout-content{
+    width: 87.5rem;
+}

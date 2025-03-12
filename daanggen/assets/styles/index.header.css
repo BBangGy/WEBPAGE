@@ -1,0 +1,50 @@
+#header>.layout-content{
+    width: 100%;
+
+    align-items: center;
+    border-bottom: 0.0625rem solid #24272C;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 4.5rem;
+    position: fixed;
+    z-index: 3;
+}
+#header>.layout-content>.menu{
+    align-items: center;
+    display: flex;
+    width: 87.5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-inline: auto;
+    box-sizing: border-box;
+    padding: 0 5rem;
+}
+#header>.layout-content>.menu>.stretch{
+    flex-grow: 1;
+}
+#header>.layout-content>.menu>.item>.link{
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
+#header>.layout-content>.menu>.item>.downLoad{
+    width: 5.5rem;
+    height: 2rem;
+    background-color: #FE6F0F;
+    border: none;
+    border-radius:0.3rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+#header>.layout-content>.menu>.item>.downLoad:hover{
+    background-color: #F7A376;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
