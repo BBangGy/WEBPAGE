@@ -1,0 +1,37 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+a[href]{
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background-color: #ffffff;
+    color: #212121;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    margin: 0;
+}
+button,input,select,textarea{
+    background-color: initial;
+/*    initial은 배경색이 없다.*/
+    border: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font: inherit;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+ol,ul{
+    margin-inline: 0;
+    margin-block: 0;
+    padding-inline: 0;
+    list-style-type: none;
+}

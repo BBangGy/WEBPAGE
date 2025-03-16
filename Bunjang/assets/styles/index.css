@@ -1,0 +1,140 @@
+@import "index.footer.css";
+@import "index.main.css";
+@import "index.header.css";
+@import "index.toolbar.css";
+@import "index.ad.css";
+
+body{
+    /*이걸 주는 상황은 만약에 창을 작게 하였을때 짤리면 그냥 이 옵션을 주면된다.*/
+    display: inline-block;
+    min-width: 100%;
+}
+body:has(#loginFormGlobalToggle:checked){
+    overflow: hidden;
+/*    */
+}
+body>.global-toggle{
+    display: none;
+}
+body>.login-form-cover{
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #21212175;
+    position: fixed;
+    z-index: 3;
+}
+#loginFormGlobalToggle:checked + .login-form-cover{
+    display: block;
+}
+#loginForm{
+    top: 50%;
+    left: 50%;
+    width: 26.25rem;
+    padding: 2.875rem 2rem 1.5rem 2rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+    background-color: #f7f7f7;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+#loginFormGlobalToggle:checked ~ #loginForm{
+    display: flex;
+}
+#loginForm>.close{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #a0a0a0;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+}
+#loginForm>.icon{
+    width: 2rem;
+}
+#loginForm>.primary{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+#loginForm>.secondary{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+#loginForm>.button-container{
+    width: 17.5rem;
+    margin: 1.5rem 0;
+    /*background-color: #ffa426;*/
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+#loginForm>.button-container>.button{
+    height: 2.375rem;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 0.5rem 0.0625rem #21212105;
+}
+#loginForm>.button-container>.button:hover{
+    color: #ffffff;
+    font-weight: 600;
+}
+#loginForm>.button-container>.button[name="kakao"]:hover{
+    background-color: #3c1f1f;
+}
+#loginForm>.button-container>.button[name="facebook"]:hover{
+    background-color: #3c5a98;
+}
+#loginForm>.button-container>.button[name="naver"]:hover{
+    background-color: #1fc801;
+}
+#loginForm>.button-container>.button[name="phone"]:hover{
+    background-color: #9b99a9;
+}
+#loginForm>.button-container>.button:hover>.icon{
+    filter: brightness(0) invert(100%);
+}
+#loginForm>.button-container>.button>.icon{
+    top: 50%;
+    left: 2.375rem;
+    transform:translateY(-50%);
+    height: 1.5rem;
+    position: absolute;
+}
+#loginForm>.button-container>.button>.icon[src$=".svg"]{
+    height: 1rem;
+    left: 2.625rem;
+}
+#loginForm>.help {
+    border-top: 0.0625rem solid #e0e0e0;
+    color: #757575;
+    font-size: 0.775rem;
+    line-height: 1.425rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+#loginForm>.help>.dim{
+    color:#212121;
+}
+body>.layout-wrapper{
+    padding:0 7.5rem;
+}
+body>.layout-wrapper>.layout-content{
+    width: 64rem;
+    margin: 0 auto;
+}
