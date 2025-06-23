@@ -1,5 +1,5 @@
 # WEBPAGE
-web 페이지에 대해 만들어본다.
+web 페이지에 대해 클론 코딩을 해본다.
 
 #번개장터
 <img width="1725" alt="스크린샷 2025-06-23 오전 1 06 15" src="https://github.com/user-attachments/assets/72323146-5dd7-4669-906f-deb14192bac4" />
